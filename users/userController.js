@@ -4,6 +4,7 @@ var collections = [""];*/
 
 //Required Modules
 //var db = require("mongojs").connect(databaseUrl, collections);
+var fs = require("fs");
 
 var respond = function(request, response, write){
   response.writeHead(200, {"Content-Type": "text/html"});
@@ -12,7 +13,13 @@ var respond = function(request, response, write){
 }
 
 var index = function (request, response) {
-    respond(request, response, "<h1>Hey there, cowboy!</h1>");
+  fs.readFile("./view.html", function (err, data) {
+  	if (err) {
+      console.log("YO! WE HAVE AN ERROR OVER HERE!");
+      console.log(err);
+  	}
+    respond(request, response, data);
+  });
 }
 
 exports.index = index;
