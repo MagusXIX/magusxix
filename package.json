@@ -1,0 +1,27 @@
+{
+  "name": "magusxix",
+  "version": "0.0.0",
+  "description": "New site.",
+  "main": "index.js",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "express": "^4.11.1"
+  },
+  "devDependencies": {
+    "express": "4.11.x",
+    "backbone": "1.1.x"
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MagusXIX/magusxix.git"
+  },
+  "author": "MagusXIX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagusXIX/magusxix/issues"
+  },
+  "homepage": "https://github.com/MagusXIX/magusxix"
+}
